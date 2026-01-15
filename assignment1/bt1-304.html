@@ -5,6 +5,16 @@
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link rel="icon" type="images/png" href="images/fav.png">
         <title>Index lani dani sth</title>
+        <style type="text/css">
+            h1{
+                font-size: 36;
+            }
+            .introduction-heading{
+                color: green;
+                text-align: left;
+                
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -28,17 +38,19 @@
         <main>
             <img src="images/slider-1.jpg" width="100%">
             <section class="intro">
-                <p><b>Chúng tôi là ai?</b></p>
-                <h1><b>Công ty LANI & DANI</b></h1>
-                <p><b>Tự hào là công ty đầu tiên tại Việt Nam cung cấp dịch vụ trọn gói</b> trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf,
-                    cung ứng nguồn lực, dịch vụ huấn luyện, quản lý và hậu cần cho dịch vụ Golf.</p>
-                <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân dụng, nhà xưởng công nghiệp, công trình hạ tầng kỹ thuật
-                    , đường giao thông, cầu cảng, bờ kè, nạo vét sông rạch, xây dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệt xây dựng.
+                <div>
+                    <p><b>Chúng tôi là ai?</b></p>
+                    <h1 class="introduction-heading" id="introduction-heading"><b>Công ty LANI & DANI</b></h1>
+                    <p><b>Tự hào là công ty đầu tiên tại Việt Nam cung cấp dịch vụ trọn gói</b> trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf,
+                        cung ứng nguồn lực, dịch vụ huấn luyện, quản lý và hậu cần cho dịch vụ Golf.</p>
+                    <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân dụng, nhà xưởng công nghiệp, công trình hạ tầng kỹ thuật
+                        , đường giao thông, cầu cảng, bờ kè, nạo vét sông rạch, xây dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệt xây dựng.
                 </p>
-                <aside>
+                </div>
+                <div>
                     <img src="images/introduction-girl.jpg" width="25%">
                     <img src="images/introduction-man.jpg" width="25%">
-                </aside>
+                </div>
             </section>
             
             <section class="golf-service">
@@ -85,47 +97,54 @@
                      lĩnh vực dưới đây
                 </p>
                 <article>
-                    <img src="images/house.png" width="25%">
+                    <img src="images/house.png" width="100px">
                     <h2>Xây dựng nhà ở</h2>
                 </article>
                 <article>
-                    <img src="images/scaffolding.png" width="25%">
+                    <img src="images/scaffolding.png" width="100px">
                     <h2>Xây dựng các công trình kỹ thuật dân dụng</h2>
                 </article>
                 <article>
-                    <img src="images/drill.png" width="25%">
+                    <img src="images/drill.png" width="100px">
                     <h2>Phá dỡ</h2>
                 </article>
                 <article>
-                    <img src="images/blueprint.png" width="25%">
+                    <img src="images/blueprint.png" width="100px">
                     <h2>Lắp đặt hệ thống điện, cấp thoát nước, sưởi và điều hòa không khí</h2>
                 </article>
                 <article>
-                    <img src="images/conversation.png" width="25%">
+                    <img src="images/conversation.png" width="100px">
                     <h2>Hoạt động thiết kế chuyên dụng và tư vấn kỹ thuật liên quan</h2>
                 </article>
                 <article>
-                    <img src="images/agreement.png" width="25%">
+                    <img src="images/agreement.png" width="100px">
                     <h2>Tư vấn môi giới, đấu giá bất động sản, đấu giá quyền sử dụng đất</h2>
                 </article>
                 <article>
-                    <img src="images/location-pin.png" width="25%">
+                    <img src="images/location-pin.png" width="100px">
                     <h2>Dịch vụ chăm sóc và duy trì cảnh quan</h2>
                 </article>
                 <article>
-                    <img src="images/demolition.png" width="25%">
+                    <img src="images/demolition.png" width="100px">
                     <h2>Bán buôn máy móc, thiết bị, phụ tùng máy móc</h2>
                 </article>
-                <article>
-                    <img src="images/Consultant.png">
-                    <h1>Bạn đang cần tư vấn?</h1>
-                    <p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá tốt nhất dành riêng cho bạn</p>
-                    <form>
-
-                    </form>
-                </article>
             </section>
-            <section>
+            <section class="form">
+                <img src="images/Consultant.png" width="100px">
+                <h1>Bạn đang cần tư vấn?</h1>
+                <p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá tốt nhất dành riêng cho bạn</p>
+                <form>
+                    <input type="text" name="fullName" placeholder="Tên của bạn">
+                    <br>
+                    <input type="email" name="email" placeholder="Email">
+                    <br>
+                    <input type="tel" name="phoneNum" placeholder="Số điện thoại">
+                    <br>
+                    <textarea name="messageContent" rows="3" cols="18" placeholder="Lời nhắn"></textarea>
+                    <button type="submit">GỬI</button>
+                </form>
+            </section>
+            <section class="">
                 <p><b>Cập nhật hằng ngày</b></p>
                 <h1>Tin tức - Hoạt động</h1>
                 <article>
