@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 5 - Registration form</title>
+    <!-- <style>
+        input{
+            width: 97%;
+        }
+    </style> -->
+</head>
+<body>
+    <form action="" method="post">
+        <table border="1" cellspacing="1" cellpadding="5" >
+            <tr>
+                <th>
+                    <label for="full-name">Full Name*</label>
+                </th>
+                <td>
+                    <input type="text" name="full-name" id="full-name" required="required">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="form-email">Email*</label></th>
+                <td><input type="text" name="email" id="form-email" required=""></td>
+            </tr>
+            <tr>
+                <th><label for="form-password">Password*</label></th>
+                <td><input type="text" name="password" id="form-password" required="" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <th><label for="form-confirm-password">Confirm Password*</label></th>
+                <td><input type="text" name="password" id="form-confirm-password" placeholder="Enter your password again"></td>
+            </tr>
+            <tr>
+                <th><label for="form-phone-num">Phone number*</label></th>
+                <td><input type="tel" name="phone-num" id="form-phone-num"></td>
+            </tr>
+            <tr>
+                <th><label for="form-address">Address</label></th>
+                <td><textarea name="address" id="form-address"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="form-city">City</label></th>
+                <td>
+                    <table>
+                        <td><input type="text" name="city" id="form-city" placeholder="Enter your city"></td>
+                        <th><label for="form-state">State</label></th>
+                        <td><input type="text" name="state" id="form-state" placeholder="Enter your state"></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="form-zip-postal">Zip/Postal Code</label></th>
+                <td><input type="text" name="zip-postal" id="form-zip-postal" placeholder="Enter your Zip/Postal Code"></td>
+            </tr>
+            <tr>
+                <th><label for="form-country">Country</label></th>
+                <td>
+                    <select name="country" id="form-country">
+                        <option value="default">[Select your country]</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Laos">Laos</option>
+                        <option value="Philipines">Philipines</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="form-birthday">Birthday</label></th>
+                <td><input type="text" name="birthday" id="form-birthday" placeholder="mm/dd/yyyy"></td>
+            </tr>
+            <tr>
+                <th><label for="form-gender">Gender</label></th>
+                <td>
+                    <select name="gender" id="form-gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="form-starting-date">Starting date</label></th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" name="starting-date" id="form-starting-date" value="Spring">
+                                <label for="form-starting-date">Spring</label>
+                            </td>
+                            
+                            <td>
+                                <input type="radio" name="starting-date" id="form-starting-date-1" value="Summer">
+                                <label for="form-starting-date-1">Summer</label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="form-comments">Comments</label></th>
+                <td><textarea name="comments" id="form-comments" placeholder="Please send us more information"></textarea></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="image" src="images/5-Submit Button.png" alt="submit" name="submitBtn">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
