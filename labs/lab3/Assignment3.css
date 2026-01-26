@@ -1,13 +1,45 @@
-.main-article{
-
-}
 .section1{
+    width: 550px;
+}
+.section2{
     width: 550px;
 }
 .main-article{
     border-bottom: 2px dashed black  ;
 }
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 a{
     color: black;
     text-decoration: none;
+}
+.username{
+    color:rgb(1, 163, 163);
+    font-weight: bold;
+}
+.additional-info{
+    color: gray;
+}
+.rectangle{
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: red; 
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.genre,.additional-info{
+    font-size: 12px;
+}
+.fa-solid{
+    color: gray;
+}
+.subgenre{
+    color: rgb(0, 123, 255);
+}
+li{
+    padding:5px 20px;
 }
