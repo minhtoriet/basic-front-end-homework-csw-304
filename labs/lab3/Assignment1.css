@@ -1,0 +1,35 @@
+.box{
+    padding: 20px 15px 20px 15px;
+    border-width: 2px;
+    border-color: rgb(102,102,102);
+    border-style: solid;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(238,238,238);
+}
+.title{
+    font-style: italic;
+    font-weight: bold;
+}
+.data{
+    color: rgb(102, 102, 102);
+}
+.support{
+    font-weight: bold;
+    color: red;
+}
+.answer{
+    color:rgb(255, 136, 0);
+    font-weight: bold;
+}
+.clickable{
+    color:rgb(107, 90, 255)
+}
+.circle{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #007500;
+    border-radius: 50%;
+}

@@ -1,0 +1,13 @@
+.main-article{
+
+}
+.section1{
+    width: 550px;
+}
+.main-article{
+    border-bottom: 2px dashed black  ;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
