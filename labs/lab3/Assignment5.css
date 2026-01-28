@@ -1,0 +1,34 @@
+.menu > li {
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+}
+.menu > li:hover .sub-menu{
+    display: block;
+}
+ul ul{
+    display: none;
+}
+.menu > li:last-child {
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+ul{
+    width: 200px;
+}
+.menu, .sub-menu{
+    list-style: none;
+}
+.sub-menu li::before{
+    content: "+";
+}
+.menu > li > a:hover{
+    color: white;
+    background-color: gray;
+}
+.menu > li > a {
+    display: block;
+    padding: 8px 12px;
+}

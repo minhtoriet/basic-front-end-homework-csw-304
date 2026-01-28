@@ -1,9 +1,9 @@
-.section1 {
+.article1 {
     width: 200px;
     border: 1px solid blue;
 
 }
-.section1 img{
+.article1 img{
     width: 70%;
     height: auto;
     display: block;

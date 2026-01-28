@@ -1,0 +1,13 @@
+.search{
+    background: url(images/search.jpg) no-repeat 2px center;
+    background-position: 3px;
+    padding-left: 34px;
+    background-size: 32px 32px;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 5px;
+}
+.search:hover, .search:focus {
+    border-color: rgb(108, 108, 252);
+    width: 240px;
+}

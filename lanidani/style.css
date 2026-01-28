@@ -10,6 +10,8 @@
 }
 .golf-service-article{
     width : 300px;
+    -webkit-box-shadow: 5px 5px 22px -6px rgba(0,0,0,0.75); 
+    box-shadow: 5px 5px 22px -6px rgba(0,0,0,0.75);
 }
 article img {
     width: 100%;
@@ -28,7 +30,7 @@ article img {
     width: 40px;
     height: 40px;
     background-color:darkgreen;
-    color: #fff;
+    color: white;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -42,4 +44,10 @@ article img {
     color:white;
     padding : 5px;
     
+}
+.article-content{
+    padding: 5px;
+}
+.article-image{
+
 }

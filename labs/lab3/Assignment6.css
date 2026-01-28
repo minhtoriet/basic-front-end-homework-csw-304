@@ -1,0 +1,11 @@
+@font-face {
+    font-family: MinhTriet;
+    src: url(EdwardianScriptITC1.0.ttf);
+}
+.text{
+    font-family: MinhTriet;
+    color: #0094ff;
+}
+.first-letter{
+    font-size: 70px;
+}
