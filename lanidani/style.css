@@ -1,0 +1,45 @@
+.golf-service{
+    background-image: url(images/background-service.jpg);
+    background-position: top center;
+
+}
+.golf-service-overlay{
+    background-color: rgba(255, 255, 255, 0.807);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.golf-service-article{
+    width : 300px;
+}
+article img {
+    width: 100%;
+}
+.container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right:  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center{
+    text-align: center;
+}
+.go-to-top{
+    width: 40px;
+    height: 40px;
+    background-color:darkgreen;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.discount{
+    width: 50px;
+    background-color: red;
+    color:white;
+    padding : 5px;
+    
+}
