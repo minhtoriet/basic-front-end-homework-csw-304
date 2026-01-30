@@ -21,10 +21,16 @@ ul{
 .menu, .sub-menu{
     list-style: none;
 }
+.sub-menu{
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
 .sub-menu li::before{
     content: "+";
+    color: black;
 }
-.menu > li > a:hover{
+.menu > li:hover{
     color: white;
     background-color: gray;
 }
