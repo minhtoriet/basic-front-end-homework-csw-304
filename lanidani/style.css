@@ -9,12 +9,28 @@
     padding-bottom: 60px;
 }
 .golf-service-article{
-    width : 300px;
     -webkit-box-shadow: 5px 5px 22px -6px rgba(0,0,0,0.75); 
     box-shadow: 5px 5px 22px -6px rgba(0,0,0,0.75);
+    margin-bottom:45px;
+    height: 100%;
+}
+.green-text{
+    color:#106A39;
 }
 article img {
     width: 100%;
+}
+ul {
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+section h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
 }
 .container{
     max-width: 1280px;
@@ -46,8 +62,38 @@ article img {
     
 }
 .article-content{
-    padding: 5px;
+    padding:15px;
 }
-.article-image{
+.intro{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro-girl{
+    padding-top: 70px;
+}
+.intro-man{
+    padding-bottom: 70px;
+}
+.other-services img{
+    display: block;
+    width: 60px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.other-services-article{
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    height: 100%;
+    text-align: center;
+}
+.col-12,
+.col-md-3,
+.col-md-4 {
+    margin-bottom: 20px;
 }
