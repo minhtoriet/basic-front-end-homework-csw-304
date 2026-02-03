@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: rgb(6, 75, 155);
-    border-bottom: orange solid 4px;
+    background-color: rgb(40,75,115);
+    border-bottom: rgb(255,155,0) solid 4px;
 }
 .container{
     width: 100%;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(6, 75, 155);
+    background-color: rgb(40,75,115);
 }
 a{
     text-decoration: none;
@@ -25,36 +25,42 @@ ul{
 .menu > li{
     position: relative;
 }
-.menu > li a {
+.menu li a {
     display: block;
-    border-right: solid white 1px;
     padding: 10px 20px;
 }
 .submenu li a {
     border-bottom: 1px solid white;
 }
+li{
+    border-right: solid white 1px;
+}
 .submenu{
     display:none;
-    background-color: rgb(6, 75, 155);
-    border-bottom: 1px solid white;
 }
 .menu{
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
 }
-.current-item{
+li:hover, .current-item{
     display: block;
-    background-color: orange;
-}
-.menu li a:hover{
-    background-color: orange;
+    background-color: rgb(255,155,0);
 }
 .menu li:hover .submenu{
     display: block;
     position: absolute;
+    background-color: rgb(40,75,115);
+    /* border-bottom: 1px solid white; */
 }
-.has-child::after{
-    content:;
+.has-child{
+    padding-right: 20px;
+}
+.has-child > a{
+    position: relative;
+}
+.has-child > a::after{
+    content:"\f107";   
+    font-family: "fontawesome";
+    position: absolute;
+    right: -4px;
 }

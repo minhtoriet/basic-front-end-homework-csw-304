@@ -30,11 +30,11 @@ h1{
     flex-wrap:wrap;
 }
 .col-40{
-    max-width: 40%;
-    padding-right: 15px;
+    width: 30%;
+    /* padding-right: 15px; */
 }
 .col-60{
-    max-width: 60%;
+    width: 70%;
 }
 .btns button{
     text-align: right;
@@ -42,9 +42,15 @@ h1{
     padding-right: 12px;
     font-size: 14px;
 }
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 15px;
+}
 .listenbtn{
     background-image: url(images/listen.png);
-    width: 75px;
+    width: 70px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
