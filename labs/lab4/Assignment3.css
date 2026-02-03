@@ -1,0 +1,60 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(6, 75, 155);
+    border-bottom: orange solid 4px;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(6, 75, 155);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+}
+.menu > li a {
+    display: block;
+    border-right: solid white 1px;
+    padding: 10px 20px;
+}
+.submenu li a {
+    border-bottom: 1px solid white;
+}
+.submenu{
+    display:none;
+    background-color: rgb(6, 75, 155);
+    border-bottom: 1px solid white;
+}
+.menu{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.current-item{
+    display: block;
+    background-color: orange;
+}
+.menu li a:hover{
+    background-color: orange;
+}
+.menu li:hover .submenu{
+    display: block;
+    position: absolute;
+}
+.has-child::after{
+    content:;
+}
