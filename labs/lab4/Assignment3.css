@@ -37,6 +37,7 @@ li{
 }
 .submenu{
     display:none;
+    min-width: 100%;
 }
 .menu{
     display: flex;

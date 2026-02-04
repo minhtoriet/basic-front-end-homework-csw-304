@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.biggerContainer{
+    background-color: rgb(45, 62, 80);
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.about{
+    text-decoration: none;
+    color:white;
+}
+.about div{
+    display: block;
+    padding: 6px;
+}
+.login{
+    margin-left: auto;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo {
+    display: block;
+}
+.right-side{
+    display: flex;
+    align-self: center;
+}
+.search-box{
+    display: flex;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-image: url(images/search.jpg);
+    background-repeat: no-repeat;
+    background-position: 160px;
+    background-size: 25px;
+}
+.cart-icon{ 
+    background: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.cart a{
+    color: black;
+}
+.cart-icon a, .about a{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.cart{
+    margin-left: 10px;
+}
+.price a{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+.login{
+    text-align: end;
+}
+.menu-container{
+    background-color:rgb(101, 45, 146);
+}
+.menu > li{
+    position: relative;
+}
+.has-child{
+    padding: 0 10px;
+}
+.menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+
+    background-color:rgb(101, 45, 146);
+}
+.menu li:hover{
+    background-color: rgb(120, 57, 164);
+    color:#fff;
+}
+.menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color:#fff ;
+    color: rgb(101, 45, 146);
+    box-shadow: 4px 5px 5px -5px rgba(0,0,0,1);
+    -webkit-box-shadow: 4px 5px 5px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 4px 5px 5px -5px rgba(0,0,0,1);
+}
+.menu li:hover .submenu li a{
+    color:rgb(101, 45, 146) ;
+}
+.menu li:hover .submenu li a:hover {
+    color: white;
+    background-color: rgb(120, 57, 164); /* optional but recommended */
+}
