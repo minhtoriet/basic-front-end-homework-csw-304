@@ -114,8 +114,9 @@ ul{
     top: 100%;
     left: 0;
     min-width: 100%;
-
+    width: 200px;
     background-color:rgb(101, 45, 146);
+    z-index: 2;
 }
 .menu li:hover{
     background-color: rgb(120, 57, 164);
@@ -136,4 +137,75 @@ ul{
 .menu li:hover .submenu li a:hover {
     color: white;
     background-color: rgb(120, 57, 164); /* optional but recommended */
+}
+.sale-desc{
+    display: block;
+    margin: 25px 25px 10px 25px;
+    font-size: 20px;
+    color: rgb(62,	70,	81);
+    padding: 5px;
+    border-left: solid rgb(101, 45, 146) 4px;
+    border-top: dashed gray 1px;
+    border-bottom: dashed gray 1px;
+    background-color: rgb(230, 230, 230);
+}
+.col-3{
+    display: flex;
+    width: 25%;
+    padding: 20px;
+    justify-content: center;
+}
+.article-desc{
+    padding: 5px;
+}
+.sale-amount{
+    display: flex;
+    height: 45px;
+    width: 45px;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+}
+.product-article{
+    position: relative;
+    width: 100%;
+}
+.product-article img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.product-article h2{
+    color: black;
+    font-size: 20px;
+}
+.product-code {
+    color:purple;
+    margin: 10px 0px;
+}
+.product-old-price{
+    color: gray;
+    text-decoration: line-through;
+}
+.product-new-price{
+    color:red;
+    font-weight: bold;
+    font-size: 18px;
+}
+.to-top-button{
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgb(101, 45, 146);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    color: white;
+    cursor: pointer;
 }
