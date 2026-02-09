@@ -1,0 +1,113 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigation{
+    background-color: rgb(40,75,115);
+    border-bottom: rgb(255,155,0) solid 4px;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+}
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+}
+.submenu li a {
+    border-bottom: 1px solid white;
+}
+li{
+    border-right: solid white 1px;
+}
+.submenu{
+    display:none;
+    min-width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+li:hover, .current-item{
+    display: block;
+    background-color: rgb(255,155,0);
+}
+.menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color: rgb(40,75,115);
+    /* border-bottom: 1px solid white; */
+}
+.has-child{
+    padding-right: 20px;
+}
+.has-child > a{
+    position: relative;
+}
+.has-child > a::after{
+    content:"\f107";   
+    font-family: "fontawesome";
+    position: absolute;
+    right: -4px;
+}
+.close-btn{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .close-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: white;
+    }
+    .submenu{
+        display: block;
+    }
+    .submenu li{
+        border-right: none;
+    }
+    .submenu li a{
+        margin-left: 25px;
+    }
+    
+    .navigation{
+        padding-top: 60px;
+        background-color: rgba(0,0,0,0.9);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        border-bottom: none;
+    }
+    .menu{
+        display: block;
+    }
+    .li:hover{
+        background-color: transparent;
+    }
+    .menu .li:hover .submenu{
+        background-color: transparent;
+    }
+}
