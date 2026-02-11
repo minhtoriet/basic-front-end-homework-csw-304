@@ -159,7 +159,7 @@ ul {
 .sliders {
     margin: 20px 0px;
 }
-.sliders img{
+img{
     width: 100%;
     height: auto;
 }
@@ -176,13 +176,11 @@ ul {
   border-left: solid rgb(101, 45, 146) 4px;
   border-top: dashed gray 1px;
   border-bottom: dashed gray 1px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(242, 242, 242);
 }
 .col-md-3 {
-  display: flex;
   width: 25%;
   padding: 20px;
-  justify-content: center;
 }
 .article-desc {
   padding: 5px;
@@ -202,10 +200,9 @@ ul {
 .product-article {
   position: relative;
   width: 100%;
+  background-color: rgb(242, 242, 242);
 }
 .product-article img {
-  width: 100%;
-  height: auto;
   max-width: 100%;
 }
 .product-article h2 {
@@ -225,6 +222,9 @@ ul {
   font-weight: bold;
   font-size: 18px;
 }
+.product-desc{
+  padding: 10px;
+}
 .to-top-button {
   text-align: center;
   line-height: 45px;
@@ -237,4 +237,40 @@ ul {
   right: 25px;
   color: white;
   cursor: pointer;
+}
+
+/* sidebar */
+.sidebar-product-article{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-top: 2px solid gray;
+}
+.sidebar-product-article .col-md-3{
+  padding: 0px;
+}
+.sidebar-product-article img{
+  width: 100%;
+  height: auto;
+}
+.sidebar-product-article .row{
+  justify-content: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+.sidebar-product-article a{
+  font-size: 14px;
+  color: black;
+}
+.sidebar-product-article .sale-amount{
+  bottom: 30px;
+  right: 10px;
+  top: auto;
+}
+.article-border {
+  background-color: rgb(242, 242, 242);
+}
+.sale-sidebar-section article:first-of-type{
+  border-top: none;
 }
