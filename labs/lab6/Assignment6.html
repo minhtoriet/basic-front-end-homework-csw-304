@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6 - Parsing numbers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- dat id cho tung td -->
+        <table class="table table-bordered border-primary">
+            <tr>
+                <td id="11">str</td>
+                <td id="12">parseInt(str)</td>
+                <td id="13">parseFloat(str)</td>
+                <td id="14">Number(str)</td>
+                <td id="15">+str</td>
+                <td id="16">str | 0</td>
+            </tr>            
+            <tr>
+                <td id="21">1234</td>
+                <td id="22"></td>
+                <td id="23"></td>
+                <td id="24"></td>
+                <td id="25"></td>
+                <td id="26"></td>
+            </tr>
+            <tr>
+                <td id="31">1234abc</td>
+                <td id="32"></td>
+                <td id="33"></td>
+                <td id="34"></td>
+                <td id="35"></td>
+                <td id="36"></td>
+            </tr>
+            <tr>
+                <td id="41">0.15</td>
+                <td id="42"></td>
+                <td id="43"></td>
+                <td id="44"></td>
+                <td id="45"></td>
+                <td id="46"></td>
+            </tr>
+            <tr>
+                <td id="51">3.14ivan</td>
+                <td id="52"></td>
+                <td id="53"></td>
+                <td id="54"></td>
+                <td id="55"></td>
+                <td id="56"></td>
+            </tr>
+            <tr>
+                <td id="61">Infinity</td>
+                <td id="62"></td>
+                <td id="63"></td>
+                <td id="64"></td>
+                <td id="65"></td>
+                <td id="66"></td>
+            </tr>
+            <tr>
+                <td id="71">9999999999999999</td>
+                <td id="72"></td>
+                <td id="73"></td>
+                <td id="74"></td>
+                <td id="75"></td>
+                <td id="76"></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            for (let i = 2; i <= 7; i++){
+                document.getElementById(`${i}2`).innerText = parseInt(document.getElementById(`${i}1`).innerText);
+                document.getElementById(`${i}3`).innerText = parseFloat(document.getElementById(`${i}1`).innerText);
+                document.getElementById(`${i}4`).innerText = Number(document.getElementById(`${i}1`).innerText);
+                document.getElementById(`${i}5`).innerText = +(document.getElementById(`${i}1`).innerText);
+                document.getElementById(`${i}6`).innerText = (document.getElementById(`${i}1`).innerText) | 0;
+            }
+        </script>
+    </body>
+</html>

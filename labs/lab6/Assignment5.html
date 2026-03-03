@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5 - Alert Messages</title>
+        <style>
+            .noti{
+                display: none;
+                position: relative;
+                margin-top: 10px;
+                /* height: 50px;
+                padding: 10px;
+                color: white; */
+            }
+            #success{
+                background-color: rgb(84, 207, 84);
+            }
+            #danger{
+                background-color: rgb(238, 75, 75);
+            }
+            .noti span{
+                position: absolute;
+                right: 10px;
+                top: 35%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="noti" id="danger">
+            <p><b>Danger!</b> Indicates a dangerous or potentially negative action.</p><span>x</span>
+        </div>
+        <div class="noti" id="success">
+            <p><b>Success!</b> Indicates a successful or positive action.</p><span>x</span>
+        </div>
+        <script type="text/javascript">
+            let noti = document.querySelectorAll('.noti');
+            noti.forEach(element =>{
+                element.style.display = 'block';
+                element.style.height = '50px';
+                element.style.width = '500px';
+                element.style.padding = '10px'; 
+                element.style.color = 'white';
+                setTimeout(() => {
+                    element.style.display = 'none';
+                }, 5000);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7 - href replacement</title>
+    </head>
+    <body>
+        <a href="google.com">click</a>
+        <script type="text/javascript">
+            let links = document.querySelectorAll('a[href]');
+            links.forEach(element =>{
+                element.setAttribute('href','youtube.com');
+            });
+        </script>
+    </body>
+</html>
