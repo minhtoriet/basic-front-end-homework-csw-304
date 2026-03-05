@@ -102,7 +102,22 @@
         </table>
     </form>
     <script type="text/javascript">
-        
+        setTimeout(() =>{
+            if (document.getElementById("full-name").value === '') 
+                console.log('Full Name cannot be empty');
+            if (document.getElementById("form-email").value === '')
+                console.log('Email cannot be empty');
+            if (document.getElementById("form-password").value === '')
+                console.log('Password cannot be empty');
+            if (document.getElementById("form-confirm-password").value === '')
+                console.log('Password confirmation cannot be empty');
+            else if (document.getElementById("form-confirm-password").value !== document.getElementById("form-password").value)
+                console.log('Password and password confirmation must be the same');
+            if (document.getElementById("form-phone-num").value === '')
+                console.log('Phone number cannot be empty');
+            if (document.getElementById("form-phone-num").value.length !== 10)
+                console.log('Enter a valid phone number');
+        },10000);
     </script>
 </body>
 </html>
