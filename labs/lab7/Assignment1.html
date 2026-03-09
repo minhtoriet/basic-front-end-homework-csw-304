@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 - Dark mode</title>
+        <link rel="stylesheet" href="Assignment1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Toggle dark/light mode</h1>
+        <p>click the button to toggle the dark/light mode for this page</p>
+        <button type="button" id="dark-mode-btn">toggle dark mode</button>
+    </body>
+    <script>
+        // const a = document.getElementById('dark-mode-btn');
+        // a.onclick = function (){
+        //     document.body.classList.toggle('dark-mode');
+        // };
+        document.getElementById('dark-mode-btn').onclick = function () {
+            document.body.classList.toggle('dark-mode');
+        };
+    </script>
+</html>

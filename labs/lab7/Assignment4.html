@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignmnet 4 - Student List</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phone num</th>
+                    <th>id</th>
+                    <th>class</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <script>
+            // 1
+            let arr = [
+                {name:'triet0', email:'abcxyz0@gmail.com', phone:'1234561', id:'stu001', class:'111'},
+                {name:'triet2', email:'abcxyz1@gmail.com', phone:'1234562', id:'stu002', class:'112'},
+                {name:'triet1', email:'abcxyz2@gmail.com', phone:'1234563', id:'stu003', class:'113'},
+                {name:'triet6', email:'abcxyz3@gmail.com', phone:'1234564', id:'stu004', class:'114'},
+                {name:'triet4', email:'abcxyz4@gmail.com', phone:'1234565', id:'stu005', class:'115'}
+            ];
+            // 2
+            arr.sort(function (a,b){
+                let x = a.name.toLowerCase();
+                let y = b.name.toLowerCase();
+                if (x > y) return 1;
+                if (x < y) return -1;
+                return 0;
+            });
+            // 3
+            const showTable = (_arr) => {
+                _arr.forEach(element => {
+                    document.querySelector('tbody').innerHTML += 
+                    `<tr>
+                        <td>${element.name}</td>
+                        <td>${element.email}</td>
+                        <td>${element.phone}</td>
+                        <td>${element.id}</td>
+                        <td>${element.class}</td>
+                    </tr>`;
+                });
+            }
+            showTable(arr);
+            // console.log(arr);
+            // 4
+            const addStudent = (_student) =>{
+                arr.unshift(_student);
+            }
+            addStudent({name:'triet10', email:'abcxyz10@gmail.com', phone:'12345610', id:'stu010', class:'111'});
+            console.log(arr);
+        </script>
+    </body>
+</html>
