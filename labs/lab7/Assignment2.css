@@ -55,19 +55,25 @@
     background-color: rgb(235, 62, 62);
 }
 .list li:nth-child(even){
-    background-color: rgb(209, 215, 224);   
+    background-color: rgb(215, 218, 224);   
 }
-.list li:hover {
-    background-color: gray;
-    color:white;
-}
-.list li::before{
+
+.list li::before {
     font-family: "Font Awesome 7 Free";
     font-weight: 900;
     content: "\f00c";
     padding-right: 10px;
     position: absolute;
     left: 10px;
-    display: none;
+    display: none; 
+}
+.checked {
+    background-color: gray !important;
+    color: white;
+    text-decoration: line-through;
+}
+.checked .list li::before{
+    display: block;
+    color: white;
 }
 

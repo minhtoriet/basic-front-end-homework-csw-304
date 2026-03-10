@@ -14,7 +14,7 @@
             </div>
             <div class="list">
                 <ul>
-                    <li>Hit the gym<span>x</span></li>
+                    <li class="checked">Hit the gym<span>x</span></li>
                     <li>Marry<span>x</span></li>
                     <li>Meet Girl Friend<span>x</span></li>
                     <li>Buy eggs<span>x</span></li>
@@ -23,6 +23,19 @@
                 </ul>
             </div>
         </div>
-        
+        <script>
+            document.querySelector('#title-add').addEventListener('click',function(){
+                let x = document.createElement('li');
+                x.innerHTML = document.querySelector('#title-input').value + `<span>x</span>`;
+                document.querySelector('.list ul').append(x);   
+            },false);
+            document.querySelector('ul').addEventListener('click',(e) =>{
+                if (e.target.tagName === 'LI'){
+                    e.target.classList.toggle('checked');
+                } else {
+                    e.target.parentNode.remove();
+                }
+            });
+        </script>
     </body>
 </html>

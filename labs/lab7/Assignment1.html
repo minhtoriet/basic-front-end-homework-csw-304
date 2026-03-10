@@ -11,12 +11,8 @@
         <button type="button" id="dark-mode-btn">toggle dark mode</button>
     </body>
     <script>
-        // const a = document.getElementById('dark-mode-btn');
-        // a.onclick = function (){
-        //     document.body.classList.toggle('dark-mode');
-        // };
-        document.getElementById('dark-mode-btn').onclick = function () {
+        document.getElementById('dark-mode-btn').addEventListener('click', function (){
             document.body.classList.toggle('dark-mode');
-        };
+        }, false);
     </script>
 </html>
