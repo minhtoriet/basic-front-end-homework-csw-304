@@ -35,6 +35,8 @@
             });
             // 3
             const showTable = (_arr) => {
+                if (document.querySelector('tbody').innerHTML !== '') 
+                    document.querySelector('tbody').innerHTML = '';
                 _arr.forEach(element => {
                     document.querySelector('tbody').innerHTML += 
                     `<tr>
@@ -51,9 +53,52 @@
             // 4
             const addStudent = (_student) =>{
                 arr.unshift(_student);
+                let tr = document.createElement('tr');
+                tr.innerHTML = 
+                    `<tr>
+                        <td>${_student.name}</td>
+                        <td>${_student.email}</td>
+                        <td>${_student.phone}</td>
+                        <td>${_student.id}</td>
+                        <td>${_student.class}</td>
+                    </tr>`;
+                document.querySelector('tbody').prepend(tr);
             }
             addStudent({name:'triet10', email:'abcxyz10@gmail.com', phone:'12345610', id:'stu010', class:'111'});
-            console.log(arr);
+            
+            // 5
+            const changeNameStudent = (_id) => {
+                for (_student of arr){
+                    if (_student.id === `stu00${2}`){
+                        _student.name = 'bai tap 5';
+                        break;
+                    }
+                }
+                showTable(arr);
+            }
+            changeNameStudent(2);
+            // 6
+            const searchStudent = (_keyword) =>{
+                let result = [];
+                for (_student of arr){
+                    if (_student.name === _keyword){
+                        result.push(_student);
+                    }
+                }
+                showTable(result);
+            }
+            //searchStudent('triet1');
+
+            // 7
+            const deleteStudent = (_id) => {
+                for (_student of arr){
+                    if (_student.id === _id){
+                        arr.splice(arr.indexOf(_student), 1);
+                    }
+                }
+                showTable(arr);
+            }
+            deleteStudent('stu010');
         </script>
     </body>
 </html>
