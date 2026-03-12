@@ -2,9 +2,55 @@
 <html>
     <head>
         <title>Assignment 3 - Gallery</title>
+        <link rel="stylesheet" href="Assignment3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        
+        <div class="container">
+            <div class="row img-list">
+                <div class="col-md-3"><img src="images/a1.jpg" alt="" data-desc="thien nhien 1"></div>
+                <div class="col-md-3"><img src="images/a2.jpg" alt="" data-desc="thien nhien 2"></div>
+                <div class="col-md-3"><img src="images/a3.jpg" alt="" data-desc="thien nhien 3"></div>
+                <div class="col-md-3"><img src="images/a4.jpg" alt="" data-desc="thien nhien 4"></div>
+                <div class="view-pic hidden">
+                    <img src="images/a1.jpg" alt="">
+                    <i class="fa-solid fa-x"></i>
+                    <p>thien nhien 1</p>
+                </div>
+            </div>
+        </div>
+        <script>   
+            let arr = [];
+            let idx = 0;
+            document.querySelector('.view-pic i').addEventListener('click',()=>{
+                document.querySelector('.view-pic').classList.toggle('hidden');
+            }, false);
+            const showPicture = (img) => {
+                if (document.querySelector('.current') !== null) {
+                        document.querySelector('.current').classList.remove('current');
+                    }
+                    img.classList.add('current');
+                document.querySelector('.view-pic img').setAttribute('src',img.getAttribute('src'));
+                document.querySelector('.view-pic p').textContent = img.getAttribute('data-desc');
+                if (document.querySelector('.hidden') !== null)
+                    document.querySelector('.hidden').classList.remove('hidden');
+            }
+            document.querySelectorAll('.col-md-3 img').forEach((element,index) =>{
+                arr.push(element);
+
+                element.addEventListener('click',()=>{
+                    idx = index;
+                    showPicture(element);
+                });
+            });
+            const autoSlideView = () => {
+                setInterval(() => {
+                    idx = (idx + 1) % arr.length;
+                    showPicture(arr[idx]);
+                }, 5000);
+            }
+            autoSlideView();
+        </script>
     </body>
 
 </html>
