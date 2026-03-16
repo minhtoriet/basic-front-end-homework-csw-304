@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fa-solid fa-utensils fs-3 me-2"></i>
+                Restoran
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Text -->
+                <div class="col-md-6">
+                    <h1 class="display-3 fw-bold text-white mb-3">Enjoy Our<br>Delicious Meal</h1>
+                    <p class="lead text-white mb-4">
+                        Tempor erat elit rebum at clita. Diam dolor diam amet ipsum sit. 
+                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
+                        sed stet lorem sit clita duo justo magna dolore erat amet.
+                    </p>
+                    <a href="#" class="btn btn-orange btn-lg px-5 py-3 fw-bold">BOOK A TABLE</a>
+                </div>
+                <!-- Right Grill Image -->
+                <div class="col-md-6 text-end">
+                    <img src="https://picsum.photos/id/29/620/620" 
+                         class="img-fluid hero-grill" 
+                         alt="Grilled Meal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Images Grid -->
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="https://picsum.photos/id/160/600/400" 
+                                 class="img-fluid about-img" alt="Restaurant Interior">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://picsum.photos/id/161/600/400" 
+                                 class="img-fluid about-img" alt="Restaurant Interior">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://picsum.photos/id/201/600/400" 
+                                 class="img-fluid about-img" alt="Food Platter">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://picsum.photos/id/292/600/400" 
+                                 class="img-fluid about-img" alt="Food Platter">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="col-md-6">
+                    <div class="section-title text-start">
+                        <span class="text-orange fw-bold">About Us</span>
+                    </div>
+                    <h2 class="display-5 fw-bold mb-4">Welcome to <span class="text-orange">Restoran</span></h2>
+                    <p class="mb-3">
+                        Tempor erat elit rebum at clita. Diam dolor diam amet ipsum sit. 
+                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
+                        sed stet lorem sit clita duo justo magna dolore erat amet.
+                    </p>
+                    <p>
+                        Tempor erat elit rebum at clita. Diam dolor diam amet ipsum sit. 
+                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
+                        sed stet lorem sit clita duo justo magna dolore erat amet.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-5 mt-5">
+                        <div class="stat">
+                            <h3 class="fw-bold text-orange mb-0">15</h3>
+                            <p class="mb-0 small fw-bold">YEARS OF<br>EXPERIENCE</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="fw-bold text-orange mb-0">50</h3>
+                            <p class="mb-0 small fw-bold">POPULAR<br>MASTER CHEFS</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-orange mt-4 px-5 py-3 fw-bold">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Popular Items -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="text-orange fw-bold">Food Menu</span>
+            </div>
+            <h2 class="text-center display-5 fw-bold mb-5">Most Popular Items</h2>
+
+            <!-- Category Tabs -->
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                <button class="category-btn active">
+                    <i class="fa-solid fa-coffee me-2"></i>Popular Breakfast
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-burger me-2"></i>Special Lunch
+                </button>
+                <button class="category-btn">
+                    <i class="fa-solid fa-utensils me-2"></i>Lovely Dinner
+                </button>
+            </div>
+
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/292/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/201/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/160/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start">
+                        <img src="https://picsum.photos/id/161/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/292/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/201/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start mb-4">
+                        <img src="https://picsum.photos/id/160/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                    <div class="menu-item d-flex align-items-start">
+                        <img src="https://picsum.photos/id/161/90/90" class="menu-img me-4" alt="">
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <p class="text-muted small mb-1">Ipsum clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <span class="price text-orange fw-bold">$115</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-0">
+                <!-- Couple Image -->
+                <div class="col-md-6 position-relative">
+                    <img src="https://picsum.photos/id/1005/800/500" 
+                         class="img-fluid w-100 h-100 object-fit-cover" 
+                         alt="Couple Dining">
+                    <div class="play-overlay">
+                        <i class="fa-solid fa-play-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="col-md-6 bg-dark text-white p-5">
+                    <div class="section-title text-start mb-3">
+                        <span class="text-orange fw-bold">Reservation</span>
+                    </div>
+                    <h3 class="fw-bold mb-4">Book A Table Online</h3>
+                    
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Date &amp; Time">
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select">
+                                    <option selected>No Of People</option>
+                                    <option>People 1</option>
+                                    <option>People 2</option>
+                                    <option>People 3</option>
+                                    <option>People 4+</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" placeholder="Special Request"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-orange w-100 py-3 fw-bold">BOOK NOW</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Chefs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="text-orange fw-bold">Team Members</span>
+            </div>
+            <h2 class="text-center display-5 fw-bold mb-5">Our Master Chefs</h2>
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="chef-card text-center">
+                        <div class="chef-img mx-auto">
+                            <img src="https://picsum.photos/id/64/300/300" alt="Chef 1">
+                        </div>
+                        <h5 class="mt-3 fw-bold">Full Name</h5>
+                        <p class="text-muted">Designation</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="chef-card text-center">
+                        <div class="chef-img mx-auto">
+                            <img src="https://picsum.photos/id/201/300/300" alt="Chef 2">
+                        </div>
+                        <h5 class="mt-3 fw-bold">Full Name</h5>
+                        <p class="text-muted">Designation</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="chef-card text-center">
+                        <div class="chef-img mx-auto">
+                            <img src="https://picsum.photos/id/160/300/300" alt="Chef 3">
+                        </div>
+                        <h5 class="mt-3 fw-bold">Full Name</h5>
+                        <p class="text-muted">Designation</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="chef-card text-center">
+                        <div class="chef-img mx-auto">
+                            <img src="https://picsum.photos/id/161/300/300" alt="Chef 4">
+                        </div>
+                        <h5 class="mt-3 fw-bold">Full Name</h5>
+                        <p class="text-muted">Designation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company -->
+                <div class="col-md-3">
+                    <div class="footer-title">Company</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                    <div class="footer-title">Contact</div>
+                    <p class="mb-1">123 Street, New York, USA</p>
+                    <p class="mb-1">+012 345 67890</p>
+                    <p class="mb-3">info@example.com</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Opening -->
+                <div class="col-md-3">
+                    <div class="footer-title">Opening</div>
+                    <p class="mb-1">Monday - Saturday</p>
+                    <p class="mb-1">09AM - 09PM</p>
+                    <p>Sunday 10AM - 08PM</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <div class="footer-title">Newsletter</div>
+                    <p class="mb-3 small">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-orange">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-top border-secondary mt-5 pt-4 text-center small">
+                © Your Site Name, All Right Reserved. Designed By CSW 304
+                <div class="float-end">
+                    <a href="#" class="text-light me-3">Home</a>
+                    <a href="#" class="text-light me-3">Cookies</a>
+                    <a href="#" class="text-light me-3">Help</a>
+                    <a href="#" class="text-light">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

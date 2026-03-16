@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-6 {
+    padding: 10px;
+}
+.col-md-6 img {
+    width: 100%;
+}
+/* header */
+nav {
+    background: transparent;
+    position: relative;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+nav ul{
+    display: flex;  
+    justify-content: center;
+}
+nav ul li, .logo{
+    display: block;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+}
+nav li a {
+    color: white;
+}
+.selected, .logo {
+    color: rgb(241, 165, 63);
+}
+.logo {
+    /* color: rgb(241, 165, 63); */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* first page */
+.first-page .container {
+    background: linear-gradient(rgba(38, 40, 73, 0.95), rgba(8, 40, 73, 0.85)),
+    url("Restoran/img/bg-hero.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+.hero-desc h1, .hero-desc p, .hero-desc button {
+    color: white;
+}
+.hero-desc {
+    padding-left: 70px;
+}
+.hero-desc h1 {
+    font-size: 50px;
+}

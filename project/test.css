@@ -1,0 +1,208 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --orange: #fd7e14;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    color: #fd7e14 !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand i {
+    color: #fd7e14;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fd7e14 !important;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                url('https://picsum.photos/id/1016/1920/1080') center/cover no-repeat;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
+}
+
+.btn-orange {
+    background: #fd7e14;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.btn-orange:hover {
+    background: #e66a00;
+    transform: translateY(-3px);
+}
+
+/* Hero Grill Image */
+.hero-grill {
+    max-width: 580px;
+    filter: drop-shadow(30px 30px 40px rgba(0,0,0,0.5));
+    border-radius: 20px;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #fd7e14;
+}
+
+/* About Images */
+.about-img {
+    border-radius: 8px;
+    transition: transform 0.4s;
+}
+
+.about-img:hover {
+    transform: scale(1.03);
+}
+
+/* Stats */
+.stat {
+    border-right: 2px solid #fd7e14;
+    padding-right: 30px;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+/* Menu Items */
+.menu-item {
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateX(10px);
+}
+
+.menu-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 1.25rem;
+}
+
+/* Category Buttons */
+.category-btn {
+    background: transparent;
+    border: 2px solid #fd7e14;
+    color: #fd7e14;
+    padding: 12px 28px;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #fd7e14;
+    color: #fff;
+}
+
+/* Reservation Play Overlay */
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #fd7e14;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.play-overlay:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+/* Chef Cards */
+.chef-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fd7e14;
+}
+
+.chef-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.chef-card:hover .chef-img img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer-title {
+    color: #fd7e14;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #fd7e14;
+}
+
+footer .input-group .btn-orange {
+    border-radius: 0;
+}
+
+/* Responsive tweaks for md only (as requested) */
+@media (min-width: 768px) {
+    .hero-grill {
+        max-width: 620px;
+    }
+}
