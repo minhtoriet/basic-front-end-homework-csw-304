@@ -39,8 +39,11 @@ nav a {
 nav li a {
     color: white;
 }
-.selected, .logo {
+.selected, .logo, .icon, .orange {
     color: rgb(241, 165, 63);
+}
+.icon {
+    font-weight: bold;
 }
 .logo {
     /* color: rgb(241, 165, 63); */
@@ -49,13 +52,13 @@ nav li a {
 }
 
 /* first page */
-.first-page .container {
-    background: linear-gradient(rgba(38, 40, 73, 0.95), rgba(8, 40, 73, 0.85)),
+.first-page {
+    background: linear-gradient(rgba(15, 23, 43, 0.95), rgba(15, 23, 43, 0.85)),
     url("Restoran/img/bg-hero.jpg");
     background-size: cover;
     background-position: center;
 } 
-.hero-desc h1, .hero-desc p, .hero-desc button {
+.hero-desc h1, .hero-desc p, .hero-desc button, .white {
     color: white;
 }
 .hero-desc {
@@ -63,4 +66,64 @@ nav li a {
 }
 .hero-desc h1 {
     font-size: 50px;
+}
+.btn {
+    color: white !important;
+    background-color: rgb(241, 165, 63) !important;
+    border-radius: 0% !important;
+    border: none;
+    padding: 10px 30px !important;
+}
+
+/* about us */
+.large{
+    font-size: 40px;
+    display: block;
+    align-self: center;
+    border-left: 4px solid rgb(241, 165, 63) ;
+}
+.vertical-center {
+    align-self: center;
+}
+
+/* popular items */
+.center-text{
+    text-align: center;
+}
+.center-btns{
+    display: flex ;
+    justify-content: center;
+}
+.center-btns button {
+    padding: 5px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px gray solid;
+    width: 170px !important;
+}
+.popular-item-btn-text {
+    text-align: left;
+}
+.medium {
+    font-size: 40px;
+    display: block;
+}
+.item {
+    margin-bottom: 20px;
+}
+.item-name-price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px rgb(205, 205, 205) solid;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+/* form */
+.form-booking .container {
+    background-color: rgb(15, 23, 43);
+}
+.video{
+    padding: 0px !important;
 }
