@@ -5,17 +5,29 @@
         <title>Restoran</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
             <section class="first-page">
                 <div class="container">
                     <header>
+                        <div class="mobile-header">
+                            <a href="" class="logo">
+                                <i class="fa-solid fa-utensils fs-3"></i>
+                                Restoran
+                            </a>
+                            <a href="" class="mobile-menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                        
                         <nav>
                             <a href="" class="logo">
-                                <i class="fa-solid fa-utensils fs-3 me-2"></i>
+                                <i class="fa-solid fa-utensils fs-3"></i>
                                 Restoran
                             </a>
                             <ul>
@@ -27,48 +39,97 @@
                             </ul>
                         </nav>
                     </header>
-                    <div class="row">
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container d-block w-100">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 hero-desc vertical-center ">
+                                            <h1>Enjoy Our <span>Delicious Meal</span></h1>
+                                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                            <button type="button" class="btn">BOOK A TABLE</button>
+                                        </div>
+                                        <div class="col-md-6 col-12 hero-img">
+                                            <img src="Restoran/img/hero.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container d-block w-100">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 hero-desc vertical-center">
+                                            <h1>adadadadad Our <span>dadadadad Meal</span></h1>
+                                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                            <button type="button" class="btn">BOOK A TABLE</button>
+                                        </div>
+                                        <div class="col-md-6 col-12 hero-img">
+                                            <img src="Restoran/img/hero.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- <div class="row">
                         <div class="col-md-6 hero-desc vertical-center">
-                            <h1>Enjoy Our Delicious Meal</h1>
+                            <h1>Enjoy Our <span>Delicious Meal</span></h1>
                             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                             <button type="button" class="btn">BOOK A TABLE</button>
                         </div>
                         <div class="col-md-6 hero-img">
                             <img src="Restoran/img/hero.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 
             </section>
             <section class="welcome-page">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6"><img src="Restoran/img/about-1.jpg" alt=""></div>
-                                <div class="col-md-6"><img src="Restoran/img/about-2.jpg" alt="" class="minimize"></div>
-                                <div class="col-md-6"><img src="Restoran/img/about-3.jpg" alt="" class="minimize"></div>
-                                <div class="col-md-6"><img src="Restoran/img/about-4.jpg" alt=""></div>
+                        <div class="col-md-6 col-12">
+                            <div class="row img-list">
+                                <div class="col-md-6 col-6"><img src="Restoran/img/about-1.jpg" alt=""></div>
+                                <div class="col-md-6 col-6 minimize-parent"><img src="Restoran/img/about-2.jpg" alt="" class="minimize minimize-1"></div>
+                                <div class="col-md-6 col-6 minimize-parent"><img src="Restoran/img/about-3.jpg" alt="" class="minimize minimize-2"></div>
+                                <div class="col-md-6 col-6"><img src="Restoran/img/about-4.jpg" alt=""></div>
                             </div>
                         </div>
-                        <div class="col-md-6 vertical-center">
+                        <div class="col-md-6 col-12 vertical-center">
                             <div class="about-us">
-                                <p class="orange">About Us</p>
+                                <p class="orange before-heading single-dash">About Us</p>
                                 <h2>Welcome to <i class="fa-solid fa-utensils icon"></i>Restoran</span></h2>
                                 <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
                                 <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6">
+                            <div class="row margin-1">
+                                <div class="col-md-6 col-12">
                                     <div class="row">
-                                        <div class="col-md-4 icon large">15</div>
-                                        <div class="col-md-8 vertical-center">Years of <b>Experience</b></div>
+                                        <div class="col-md-3 col-3 icon large">15</div>
+                                        <div class="col-md-9 col-9 vertical-center">Years of <b>Experience</b></div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-12">
                                     <div class="row">
-                                        <div class="col-md-4 icon large">50</div>
-                                        <div class="col-md-8 vertical-center">Popular <b>MASTER CHEFS</b></div>
+                                        <div class="col-md-3 col-3 icon large">50</div>
+                                        <div class="col-md-9 col-9 vertical-center">Popular <b>MASTER CHEFS</b></div>
                                     </div>
                                 </div>
                             </div>
@@ -80,35 +141,35 @@
             <section class="popular-items">
                 <div class="container">
                     <div class="center-text">
-                        <p class="orange">Food Menu</p>
+                        <p class="orange before-heading double-dash">Food Menu</p>
                         <h2>Most Popular Items</h2>
                     </div>
                     <div class="center-btns">
-                        <button type="button">
+                        <button type="button" class="selected-btn">
                             <div class="row">
-                                <div class="col-md-4"><i class="fa-solid fa-mug-saucer icon medium"></i></div>
-                                <div class="col-md-8 popular-item-btn-text"><p>Popular <b>Breakfast</b></p></div>
+                                <div class="col-md-4 col-4"><i class="fa-solid fa-mug-saucer icon medium"></i></div>
+                                <div class="col-md-8 col-8 popular-item-btn-text"><p>Popular <b>Breakfast</b></p></div>
                             </div>
                         </button>
                         <button type="button">
                             <div class="row">
-                                <div class="col-md-4"><i class="fa-solid fa-burger icon medium"></i></div>
-                                <div class="col-md-8 popular-item-btn-text"><p>Special <b>Launch</b></p></div>
+                                <div class="col-md-4 col-4"><i class="fa-solid fa-burger icon medium"></i></div>
+                                <div class="col-md-8 col-8 popular-item-btn-text"><p>Special <b>Launch</b></p></div>
                             </div>
                         </button>
                         <button type="button">
                             <div class="row">
-                                <div class="col-md-4"><i class="fa-solid fa-utensils icon medium"></i></div>
-                                <div class="col-md-8 popular-item-btn-text"><p>Lovely <b>Dinner</b></p></div>
+                                <div class="col-md-4 col-4"><i class="fa-solid fa-utensils icon medium"></i></div>
+                                <div class="col-md-8 col-8 popular-item-btn-text"><p>Lovely <b>Dinner</b></p></div>
                             </div>
                         </button>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-12">
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-2"><a href=""><img src="Restoran/img/menu-1.jpg" alt=""></a></div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-1.jpg" alt=""></a></div>
+                                    <div class="col-md-10 col-10">
                                         <a href="">
                                             <div class="item-name-price">
                                                 <h3>Chicken Burger</h3>
@@ -121,8 +182,8 @@
                             </div>
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-2"><a href=""><img src="Restoran/img/menu-3.jpg" alt=""></a></div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-3.jpg" alt=""></a></div>
+                                    <div class="col-md-10 col-10">
                                         <a href="">
                                             <div class="item-name-price">
                                                 <h3>Chicken Burger</h3>
@@ -135,8 +196,8 @@
                             </div>
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-2"><a href=""><img src="Restoran/img/menu-5.jpg" alt=""></a></div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-5.jpg" alt=""></a></div>
+                                    <div class="col-md-10 col-10">
                                         <a href="">
                                             <div class="item-name-price">
                                                 <h3>Chicken Burger</h3>
@@ -150,8 +211,8 @@
                             </div>
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-2"><a href=""><img src="Restoran/img/menu-7.jpg" alt=""></a></div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-7.jpg" alt=""></a></div>
+                                    <div class="col-md-10 col-10">
                                         <a href="">
                                             <div class="item-name-price">
                                                 <h3>Chicken Burger</h3>
@@ -166,11 +227,11 @@
                         
                         
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-12">
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-2"><a href=""><img src="Restoran/img/menu-2.jpg" alt=""></a></div>
-                                <div class="col-md-10">
+                                <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-2.jpg" alt=""></a></div>
+                                <div class="col-md-10 col-10">
                                     <a href="">
                                         <div class="item-name-price">
                                             <h3>Chicken Burger</h3>
@@ -183,8 +244,8 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-2"><a href=""><img src="Restoran/img/menu-4.jpg" alt=""></a></div>
-                                <div class="col-md-10">
+                                <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-4.jpg" alt=""></a></div>
+                                <div class="col-md-10 col-10">
                                     <a href="">
                                         <div class="item-name-price">
                                             <h3>Chicken Burger</h3>
@@ -197,8 +258,8 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-2"><a href=""><img src="Restoran/img/menu-6.jpg" alt=""></a></div>
-                                <div class="col-md-10">
+                                <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-6.jpg" alt=""></a></div>
+                                <div class="col-md-10 col-10">
                                     <a href="">
                                         <div class="item-name-price">
                                             <h3>Chicken Burger</h3>
@@ -212,8 +273,8 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-2"><a href=""><img src="Restoran/img/menu-8.jpg" alt=""></a></div>
-                                <div class="col-md-10">
+                                <div class="col-md-2 col-2"><a href=""><img src="Restoran/img/menu-8.jpg" alt=""></a></div>
+                                <div class="col-md-10 col-10">
                                     <a href="">
                                         <div class="item-name-price">
                                             <h3>Chicken Burger</h3>
@@ -230,17 +291,22 @@
             <section class="form-booking">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 video"><a href=""><img src="Restoran/img/video.jpg" alt=""></a></div>
-                        <div class="col-md-6 vertical-center">
-                            <p class="orange">Reservation</p>
+                        <div class="col-md-6 video">
+                            <a href="">
+                                <img src="Restoran/img/video.jpg" alt="">
+                                <i class="fa-solid fa-circle-play play-icon"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 vertical-center form-area">
+                            <p class="orange before-heading single-dash">Reservation</p>
                             <h2 class="white">Book A Table Online</h2>
                             <form action="">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-12">
                                         <input type="text" name="name" id="form-name" placeholder="Your Name">
-                                        <input type="datetime" name="datetime" id="form-datetime" placeholder="Data & Time">
+                                        <input type="datetime" name="datetime" id="form-datetime" placeholder="Date & Time">
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-12">
                                         <input type="email" name="email" id="form-email" placeholder="Your Email">
                                         <select name="ppl-num" id="form-ppl-num">
                                             <option value="1">People 1</option>
@@ -249,10 +315,10 @@
                                             <option value="4">People 4</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-12">
                                         <textarea name="request" id="form-request" placeholder="Special Request"></textarea>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-12">
                                         <button type="button" class="submit-btn btn">BOOK NOW</button>
                                     </div>
                                 </div>
@@ -261,11 +327,111 @@
                     </div>
                 </div>
             </section>
-
+            <section class="team-members">
+                <div class="container">
+                    <div class="center-text">
+                        <p class="orange before-heading double-dash">Team Members</p>
+                        <h2>Our Master Chefs</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class=" member-card">
+                                <img src="Restoran/img/team-1.jpg" alt="">
+                                <div class="center-text">
+                                    <h3>Full Name</h3>
+                                    <p>Designation</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" member-card">
+                                <img src="Restoran/img/team-2.jpg" alt="">
+                                <div class="center-text">
+                                    <h3>Full Name</h3>
+                                    <p>Designation</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" member-card">
+                                <img src="Restoran/img/team-3.jpg" alt="">
+                                <div class="center-text">
+                                    <h3>Full Name</h3>
+                                    <p>Designation</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class=" member-card">
+                                <img src="Restoran/img/team-4.jpg" alt="">
+                                <div class="center-text">
+                                    <h3>Full Name</h3>
+                                    <p>Designation</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>  
-        <footer></footer>
-        <script>
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-title orange before-heading single-dash">Company</div>
+                    <ul class="list-unstyled">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Reservation</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
 
-        </script>
+                <div class="col-md-3">
+                    <div class="footer-title orange before-heading single-dash">Contact</div>
+                    <p class="mb-1">123 Street, New York, USA</p>
+                    <p class="mb-1">+012 345 67890</p>
+                    <p class="mb-3">info@example.com</p>
+                    <div class="d-flex gap-3">
+                        <a href="" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="footer-title orange before-heading single-dash">Opening</div>
+                    <p class="">Monday - Saturday</p>
+                    <p class="">09AM - 09PM</p>
+                    <p>Sunday 10AM - 08PM</p>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="footer-title orange before-heading single-dash">Newsletter</div>
+                    <p class="">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="input-group">
+                        <input type="email" class="footer-form" placeholder="Your email">
+                        <button class="btn">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Your Site Name, All Right Reserved. Designed By CSW 304</p> 
+                <div class="external-links">
+                    <a href="" class="">Home</a>
+                    <a href="" class="">Cookies</a>
+                    <a href="" class="">Help</a>
+                    <a href="" class="">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
