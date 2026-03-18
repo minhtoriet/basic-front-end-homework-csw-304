@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 - “Go to top” Button</title>
+        <link rel="stylesheet" href="Assignment2.css">
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <h1>this is title</h1>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <span class="to-top-btn">^</span>
+        <script>
+            $(document).ready(() =>{                //html ready
+                $(window).scroll(() =>{             //add scroll event to a browser window 
+                    if($(this).scrollTop() > 100) { 
+                        $('.to-top-btn').fadeIn();
+                    } else {
+                        $('.to-top-btn').fadeOut();
+                    }
+                });
+                $('.to-top-btn').on('click',()=>{
+                    $('html, body').animate({scrollTop : 0}, 600);
+                });
+            });
+        </script>
+    </body>
+</html>

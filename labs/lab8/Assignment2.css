@@ -1,0 +1,15 @@
+.to-top-btn {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

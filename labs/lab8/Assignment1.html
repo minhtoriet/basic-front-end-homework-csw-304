@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 - Show/Hide password</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p>password:</p>
+        <input type="password" name="password" id="input1">
+        <input type="checkbox" name="pass-check" id="checkbox1">
+        <label for="checkbox1">Show Password</label>
+        <script>
+            $('#checkbox1').on('change',() => {
+                if ($('#input1').attr('type') === 'password')
+                    $('#input1').attr('type','text');
+                else $('#input1').attr('type','password');
+            });
+        </script>
+    </body>
+</html>
