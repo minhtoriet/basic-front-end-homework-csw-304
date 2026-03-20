@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <form class="needs-validation" novalidate>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label for="validationTooltip01">ID</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationTooltip01"
-            placeholder="First name"
-            value="Mark"
-            required
-          />
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationTooltip02">Full Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationTooltip02"
-            placeholder="full name"
-            value="Otto"
-            required
-          />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationTooltip03">Email</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationTooltip03"
-            placeholder="EmailEmail"
-            required
-          />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationTooltip03">City</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationTooltip03"
-            placeholder="City"
-            required
-          />
-          <div class="invalid-tooltip">Please provide a valid city.</div>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="Assignment4.css">
+
+	<title>Assginment 4 - Student Management System</title>
+</head>
+
+<body>
+	<div class="app container">
+		<aside class="sidebar">
+			<h2>Class List</h2>
+			<ul>
+			</ul>
+		</aside>
+		<main class="main">
+			<h1>Student Management System</h1>
+			<div class="box">
+				<h5>Add/Edit student's information</h5>
+				<form class="row gy-2 gx-3 align-items-center">
+					<div class="col-auto">
+						<label class="visually-hidden" for="stdid">id</label>
+						<input type="text" class="form-control" id="stdid" placeholder="2330">
+					</div>
+					<div class="col-auto">
+						<label class="visually-hidden" for="stdname">id</label>
+						<input type="text" class="form-control" id="stdname" placeholder="Nguyễn Văn A">
+					</div>
+					<div class="col-auto">
+						<label class="visually-hidden" for="stdemail">email</label>
+						<input type="text" class="form-control" id="stdemail" placeholder="a@student.com">
+					</div>
+					<div class="col-auto">
+						<label class="visually-hidden" for="stdclass">class</label>
+						<select class="form-select" id="stdclass">
+							<option value="Class 1">Class 1</option>
+							<option value="Class 2">Class 2</option>
+							<option value="Class 3">Class 3</option>
+						</select>
+					</div>
+					<div class="col-auto">
+						<button type="button" class="btn btn-primary">Update</button>
+					</div>
+				</form>
+			</div>
+			<div class="box">
+				<h5>Student List</h5>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Full Name</th>
+							<th scope="col">Student ID</th>
+							<th scope="col">Function</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr>
+							<th scope="row">1</th>
+							<td>Nguyen van a</td>
+							<td>2230</td>
+							<td class="">
+								<button type="button" class="btn btn-warning">Edit</button>
+								<button type="button" class="btn btn-danger">Delete</button>
+							</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</div>
+	<script src="Assignment4.js"></script>
+</body>
+
 </html>
