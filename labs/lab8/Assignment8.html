@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 8 - Gallery</title>
+    <link rel="stylesheet" href="Assignment8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row img-list">
+            <div class="col-md-3"><img src="images/a1.jpg" alt="" data-desc="thien nhien 1"></div>
+            <div class="col-md-3"><img src="images/a2.jpg" alt="" data-desc="thien nhien 2"></div>
+            <div class="col-md-3"><img src="images/a3.jpg" alt="" data-desc="thien nhien 3"></div>
+            <div class="col-md-3"><img src="images/a4.jpg" alt="" data-desc="thien nhien 4"></div>
+            <div class="view-pic hidden">
+                <img src="images/a1.jpg" alt="">
+                <i class="fa-solid fa-x"></i>
+                <p>thien nhien 1</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        let arr = $('.col-md-3 img');
+        let idx = 0;
+        $('i').on('click', ()=>{
+            $('.view-pic').addClass('hidden');
+        })
+        $('.col-md-3 img').on('click', function () {
+            $('.focus').removeClass('focus');
+            $(this).toggleClass('focus');
+            idx = arr.index(this);
+            $('.view-pic img').attr('src', $(this).attr('src'));
+            $('.view-pic p').text($(this).attr('data-desc'));
+            $('.view-pic').removeClass('hidden');
+        });
+        setInterval(() => {
+            if ($('.hidden').length !== 0) return;
+            idx = (idx + 1) % arr.length;
+            let next = arr.eq(idx);
+            $('.focus').removeClass('focus');
+            next.toggleClass('focus');
+            $('.view-pic img').attr('src', next.attr('src'));
+            $('.view-pic p').text(next.data('desc'));
+        }, 5000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* input */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-input{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+    color:white;
+    background-color: rgb(88, 142, 223);
+    padding: 10px;
+    text-align: center;
+
+}
+.list-input input{
+    width: 250px;
+    height: 30px;
+}
+.list-input button{
+    width: 60px;
+    height: 30px;
+    margin-left: -5px;
+    background-color:rgb(209, 215, 224);
+    color: gray;
+
+}
+.list-input input, .list-input button {
+    display: inline-block;
+    border: none;
+}
+
+/* list */
+.list li:hover {
+    background-color: rgb(217, 214, 214) !important;
+}
+.list li {
+    padding: 12px 30px;
+    list-style: none; 
+    position: relative;
+    vertical-align: auto;
+}
+.list li span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 17px;    
+}
+.list li span:hover {
+    background-color: rgb(235, 62, 62);
+}
+.list li:nth-child(even){
+    background-color: rgb(215, 218, 224);   
+}
+
+.list li::before {
+    
+}
+.list li.checked::before{
+    display: block;
+    color: white;
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    content: "\f00c";
+    padding-right: 10px;
+    position: absolute;
+    left: 10px; 
+}
+.checked {
+    background-color: gray !important;
+    color: white;
+    text-decoration: line-through;
+}
+

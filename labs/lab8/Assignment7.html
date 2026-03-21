@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7 - To-do list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assignment7.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="list-input">
+                <h2>My To Do List</h2>
+                <input type="text" name="title" id="title-input" placeholder="Title">
+                <button type="button" id="title-add">Add</button>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="checked">Hit the gym<span>x</span></li>
+                    <li>Marry<span>x</span></li>
+                    <li>Meet Girl Friend<span>x</span></li>
+                    <li>Buy eggs<span>x</span></li>
+                    <li>Read a book<span>x</span></li>
+                    <li>Organize room<span>x</span></li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $('#title-add').on('click',()=>{
+                if ($('#title-input').val().trim() !== ''){
+                    let li = $('<li>');
+                    li.html($('#title-input').val().trim() + `<span>x</span>`);
+                    $('.list ul').append(li);
+                }
+            });
+            $('.list ul').on('click', 'li',function (e){
+                console.log(e.target.tagName);
+                if (e.target.tagName == 'LI')
+                    $(this).toggleClass('checked');
+                else $(e.target).parent().remove();
+            });
+            // document.querySelector('#title-add').addEventListener('click',function(){
+            //     let x = document.createElement('li');
+            //     x.innerHTML = document.querySelector('#title-input').value + `<span>x</span>`;
+            //     document.querySelector('.list ul').append(x);   
+            // },false);
+            // document.querySelector('ul').addEventListener('click',(e) =>{
+            //     if (e.target.tagName === 'LI'){
+            //         e.target.classList.toggle('checked');
+            //     } else {
+            //         e.target.parentNode.remove();
+            //     }
+            // });
+        </script>
+    </body>
+</html>
