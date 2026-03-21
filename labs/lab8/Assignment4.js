@@ -88,12 +88,14 @@ const getData = async () => {
     clsdata = await response1.json();
     console.log(clsdata);
 
-    let clshtml = '';
+    let clshtml = '',option = '';
     clsdata.forEach(element => {
         clshtml += `<li>${element}</li>`;
+        option += `<option value="${element}">${element}</option>`;
     });
     displayTable(stddata);
     document.querySelector('.sidebar ul').innerHTML = clshtml;
+    document.querySelector('#stdclass').innerHTML = option;
     selectClass();
 }
 document.addEventListener('DOMContentLoaded', () => {
